@@ -1,112 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MCT</title>
-
-  <style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f9fafb;
-  color: #111;
-}
-
-nav {
-  background: white;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-}
-
-.hero {
-  height: 90vh;
-  background: linear-gradient(135deg, #4f46e5, #06b6d4);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  max-width: 700px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.btn {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: white;
-  color: #111;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-section {
-  padding: 80px 40px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.cards {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.card {
-  flex: 1;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-  </style>
+  <title>Class Tracker</title>
 </head>
-
 <body>
+  <h1>My Son's Classes</h1>
 
-<nav>
-  <h2>MCT</h2>
-  <div>Solutions for Companies</div>
-</nav>
+  <div id="classes"></div>
 
-<div class="hero">
-<h1>We help companies optimize operations using simulation and analytics</h1>
-<p>Reduce costs, improve efficiency, and make data-driven decisions</p>
-  <a href="#contact" class="btn">Contact Us</a>
-</div>
+  <button onclick="addClass()">Add Class</button>
 
-<section>
-  <h2>What We Do</h2>
-  <div class="cards">
-    <div class="card">Process Simulation</div>
-    <div class="card">Data Analytics</div>
-    <div class="card">Optimization Models</div>
-  </div>
-</section>
-
-<section>
-  <h2>Our Impact</h2>
-  <div class="cards">
-    <div class="card">Reduced process time by 25% (demo project)</div>
-    <div class="card">Built simulation model for manufacturing flow</div>
-    <div class="card">Optimized resource allocation using Python</div>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: hiranyakudva@gmail.com</p>
-</section>
-
+  <script src="app.js"></script>
 </body>
 </html>
