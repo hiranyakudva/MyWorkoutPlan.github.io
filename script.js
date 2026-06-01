@@ -55,6 +55,14 @@ const plan = {
     { name: "Bulgarian Split Lunge", gif: "gifs/day5/bulgariansplitlunge.gif" },
     { name: "Curtsy Lunge", gif: "gifs/day5/curtsylunge.gif" },
     { name: "Dumbbell Hip Thrust", gif: "gifs/day5/hipthrust.gif" }
+  ],
+  "Day 6 - Full Body and Abs": [
+    { name: "Bicep Curl and Overhead Press", gif: "gifs/day6/curlandpress.gif" },
+    { name: "Plank and Arm Extension", gif: "gifs/day6/plankarmextensions.gif" },
+    { name: "Wide Squats", gif: "gifs/day6/widesquats.gif" },
+    { name: "Push-Up and Renegade Row", gif: "gifs/day6/pushuprow.gif" },
+    { name: "Seated Twist", gif: "gifs/day6/seatedtwist.gif" },
+    { name: "Dead Bug", gif: "gifs/day6/deadbug.gif" }
   ]
 };
 
