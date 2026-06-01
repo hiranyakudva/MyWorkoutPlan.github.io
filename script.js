@@ -26,11 +26,11 @@ const plan = {
     { name: "Overhead Press and Crunch", gif: "gifs/day1/pressandcrunch.gif" },
     { name: "Squat and Bicep Curl", gif: "gifs/day1/squatandcurl.gif" }
   ],
-  "Day 2 - Upper Body": [
+  "Day 2 - Arms": [
     { name: "Push-ups", gif: "https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif" },
     { name: "Band Row", gif: "https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" }
   ],
-  "Day 3 - Cardio": [
+  "Day 3 - Leg day": [
     { name: "Jump Rope", gif: "https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" }
   ]
 };
