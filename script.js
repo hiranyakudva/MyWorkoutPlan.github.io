@@ -23,7 +23,7 @@ function showDay(dayName) {
     workoutContainer.innerHTML += `
       <div class="exercise">
         <p>${ex.name}</p>
-        <img src="${ex.gif}" onclick="window.open('${ex.gif}', '_blank')">
+        <img data-src="${ex.gif}" class="lazy" onclick="window.open('${ex.gif}', '_blank')">
       </div>
     `;
   });
@@ -49,6 +49,7 @@ function showDay(dayName) {
   }
 
   window.scrollTo({ top: 0, behavior: "smooth" });
+  initLazyLoad();
 }
 
 /* CREATE BUTTONS */
@@ -108,3 +109,20 @@ showDay(savedDay || Object.keys(plan)[0]);
 
 updateDoneButtons();
 updateProgress();
+
+function initLazyLoad() {
+  const images = document.querySelectorAll("img.lazy");
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.classList.remove("lazy");
+        obs.unobserve(img);
+      }
+    });
+  });
+
+  images.forEach(img => observer.observe(img));
+}
