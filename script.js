@@ -40,7 +40,7 @@ const plan = {
     { name: "Split Lunge", gif: "gifs/day3/splitlunge.gif" },
     { name: "Reverse Lunge and Lateral Lunge", gif: "gifs/day3/reverseandlaterallunge.gif" },
     { name: "Staggered Deadlift", gif: "gifs/day3/staggereddeadlift.gif" },
-    { name: "Dumbbell Glute Bridge", gif: "gifs/day2/dumbbellglutebridges.gif" }
+    { name: "Dumbbell Glute Bridge", gif: "gifs/day3/dumbbellglutebridges.gif" }
   ]
 };
 
