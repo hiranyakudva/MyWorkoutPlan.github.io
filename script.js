@@ -27,7 +27,14 @@ function showDay(dayName) {
     `;
   });
 
-  // highlight active button
+  // Add DONE button
+  workoutContainer.innerHTML += `
+    <button class="done-btn" onclick="markDone('${dayName}')">
+      ✅ Mark Day as Done
+    </button>
+  `;
+
+  // highlight active
   document.querySelectorAll("button").forEach(btn => {
     btn.classList.remove("active");
     if (btn.innerText === dayName) {
@@ -35,7 +42,6 @@ function showDay(dayName) {
     }
   });
 
-  // scroll to top smoothly
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
