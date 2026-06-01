@@ -134,3 +134,18 @@ function initLazyLoad() {
 
   images.forEach(img => observer.observe(img));
 }
+
+function resetProgress() {
+  const confirmReset = confirm("Are you sure you want to reset all progress?");
+
+  if (!confirmReset) return;
+
+  localStorage.removeItem("doneDays");
+
+  updateDoneButtons();
+  updateProgress();
+
+  const savedDay = localStorage.getItem("selectedDay");
+  showDay(savedDay || Object.keys(plan)[0]);
+}
+document.getElementById("resetBtn").onclick = resetProgress;
