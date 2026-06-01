@@ -29,9 +29,9 @@ function showDay(dayName) {
 
   // Add DONE button
   workoutContainer.innerHTML += `
-    <button class="done-btn" onclick="markDone('${dayName}')">
-      ✅ Mark Day as Done
-    </button>
+    <button class="done-btn" id="doneBtn" onclick="markDone('${dayName}')">
+  ✅ Mark Day as Done
+</button>
   `;
 
   // highlight active
@@ -43,6 +43,10 @@ function showDay(dayName) {
   });
 
   window.scrollTo({ top: 0, behavior: "smooth" });
+  const doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
+if (doneDays.includes(dayName)) {
+  document.getElementById("doneBtn").innerText = "✔️ Completed";
+}
 }
 
 // create buttons
@@ -85,12 +89,6 @@ function updateDoneButtons() {
     }
   });
 }
-
-const savedDay = localStorage.getItem("selectedDay");
-const savedDay = localStorage.getItem("selectedDay");
-showDay(savedDay || Object.keys(plan)[0]);
-
-updateDoneButtons();
 function updateProgress() {
   const totalDays = Object.keys(plan).length;
   const doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
@@ -105,3 +103,10 @@ function updateProgress() {
   const percent = (doneCount / totalDays) * 100;
   document.getElementById("progressFill").style.width = percent + "%";
 }
+const savedDay = localStorage.getItem("selectedDay");
+const savedDay = localStorage.getItem("selectedDay");
+showDay(savedDay || Object.keys(plan)[0]);
+
+updateDoneButtons();
+updateProgress();
+
