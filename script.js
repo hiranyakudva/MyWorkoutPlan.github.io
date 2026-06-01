@@ -34,6 +34,9 @@ function showDay(dayName) {
       btn.classList.add("active");
     }
   });
+
+  // scroll to top smoothly
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 // create buttons
