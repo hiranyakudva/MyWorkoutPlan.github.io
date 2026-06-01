@@ -20,7 +20,11 @@ const cooldown = [
 const plan = {
   "Day 1 - Full Body": [
     { name: "Back Row", gif: "gifs/day1/backrow.gif" },
-    { name: "Lunges", gif: "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" }
+    { name: "Dumbell Squat", gif: "gifs/day1/dumbellsquat.gif" },
+    { name: "Goblet March", gif: "gifs/day1/gobletmarch.gif" },
+    { name: "Overhead Tricep Extension", gif: "gifs/day1/overheadtriceps.gif" },
+    { name: "Overhead Press and Crunch", gif: "gifs/day1/pressandcrunch.gif" },
+    { name: "Squat and Bicep Curl", gif: "gifs/day1/squatandcurl.gif" }
   ],
   "Day 2 - Upper Body": [
     { name: "Push-ups", gif: "https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif" },
