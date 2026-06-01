@@ -41,7 +41,7 @@ const plan = {
     { name: "Reverse Lunge and Lateral Lunge", gif: "gifs/day3/reverseandlaterallunge.gif" },
     { name: "Staggered Deadlift", gif: "gifs/day3/staggereddeadlift.gif" },
     { name: "Dumbbell Glute Bridge", gif: "gifs/day3/dumbbellglutebridges.gif" }
-  ]
+  ],
    "Day 4 - Express Arms": [
     { name: "Lateral Shoulder Raises", gif: "gifs/day4/lateralraise.gif" },
     { name: "Bicep Curls", gif: "gifs/day4/bicepcurls.gif" },
