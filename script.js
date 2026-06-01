@@ -22,7 +22,7 @@ function showDay(dayName) {
     workoutContainer.innerHTML += `
       <div class="exercise">
         <p>${ex.name}</p>
-        <img src="${ex.gif}">
+        <img src="${ex.gif}" onclick="window.open('${ex.gif}', '_blank')">
       </div>
     `;
   });
