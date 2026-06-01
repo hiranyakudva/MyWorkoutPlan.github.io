@@ -73,6 +73,7 @@ function markDone(dayName) {
   localStorage.setItem("doneDays", JSON.stringify(doneDays));
 
   updateDoneButtons();
+  updateProgress();
 }
 
 function updateDoneButtons() {
