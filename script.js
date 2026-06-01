@@ -1,6 +1,6 @@
 const plan = {
-  "Day 1 - Legs": [
-    { name: "Squats", gif: "https://media.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif" },
+  "Day 1 - Full Body": [
+    { name: "Back Row", gif: "gifs/day1/backrow.gif" },
     { name: "Lunges", gif: "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" }
   ],
   "Day 2 - Upper Body": [
