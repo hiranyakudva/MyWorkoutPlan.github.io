@@ -90,3 +90,17 @@ const savedDay = localStorage.getItem("selectedDay");
 showDay(savedDay || Object.keys(plan)[0]);
 
 updateDoneButtons();
+function updateProgress() {
+  const totalDays = Object.keys(plan).length;
+  const doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
+
+  const doneCount = doneDays.length;
+
+  // Update text
+  document.getElementById("progressText").innerText =
+    `Day ${doneCount}/${totalDays} done`;
+
+  // Update bar
+  const percent = (doneCount / totalDays) * 100;
+  document.getElementById("progressFill").style.width = percent + "%";
+}
