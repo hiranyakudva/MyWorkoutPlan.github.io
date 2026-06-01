@@ -63,9 +63,6 @@ for (let day in plan) {
   
 }
 
-const savedDay = localStorage.getItem("selectedDay");
-showDay(savedDay || Object.keys(plan)[0]);
-
 function markDone(dayName) {
   let doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
 
@@ -87,3 +84,9 @@ function updateDoneButtons() {
     }
   });
 }
+
+const savedDay = localStorage.getItem("selectedDay");
+const savedDay = localStorage.getItem("selectedDay");
+showDay(savedDay || Object.keys(plan)[0]);
+
+updateDoneButtons();
