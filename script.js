@@ -1,13 +1,20 @@
 const warmup = [
-  "Jumping Jacks – 30 sec",
-  "Arm Circles – 30 sec",
-  "Hip Rotations – 30 sec"
+  "Arm Circles – 10 each direction",
+  "Hip Circles – 10 each direction",
+  "Leg Swings - 10 each",
+  "Glute Bridges - 10",
+  "Sqauts – 10",
+  "Lunges - 10"
+
 ];
 
 const cooldown = [
-  "Hamstring Stretch – 30 sec",
-  "Child’s Pose – 30 sec",
-  "Deep Breathing – 1 min"
+  "Shoulder Stretch - 30 sec"
+  "Quad Stretch - 30 sec",
+  "Hamstring Stretch - 30 sec",
+  "Knee to chest - 30 sec",
+  "Cat and Cow - 30 sec",
+  "Child’s Pose – 30 sec"
 ];
 
 const plan = {
