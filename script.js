@@ -91,6 +91,10 @@ function updateDoneButtons() {
   let doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
 
   document.querySelectorAll("#dayButtons button").forEach(btn => {
+    // FIRST remove all done states
+    btn.classList.remove("done");
+
+    // THEN add only if needed
     if (doneDays.includes(btn.innerText)) {
       btn.classList.add("done");
     }
@@ -136,16 +140,17 @@ function initLazyLoad() {
 }
 
 function resetProgress() {
-  const confirmReset = confirm("Are you sure you want to reset all progress?");
+  const confirmReset = confirm("Reset all progress?");
 
   if (!confirmReset) return;
 
   localStorage.removeItem("doneDays");
 
-  updateDoneButtons();
+  updateDoneButtons();   // now properly clears colors
   updateProgress();
 
   const savedDay = localStorage.getItem("selectedDay");
   showDay(savedDay || Object.keys(plan)[0]);
 }
+
 document.getElementById("resetBtn").onclick = resetProgress;
