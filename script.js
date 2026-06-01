@@ -44,9 +44,13 @@ function showDay(dayName) {
 
   // change button text if already done
   const doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
-  if (doneDays.includes(dayName)) {
-    document.getElementById("doneBtn").innerText = "✔️ Completed";
-  }
+const doneBtn = document.getElementById("doneBtn");
+
+if (doneDays.includes(dayName)) {
+  doneBtn.innerText = "❌ Undo Completed";
+} else {
+  doneBtn.innerText = "✅ Mark Day as Done";
+}
 
   window.scrollTo({ top: 0, behavior: "smooth" });
   initLazyLoad();
@@ -67,7 +71,11 @@ for (let day in plan) {
 function markDone(dayName) {
   let doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
 
-  if (!doneDays.includes(dayName)) {
+  if (doneDays.includes(dayName)) {
+    // REMOVE (undo)
+    doneDays = doneDays.filter(d => d !== dayName);
+  } else {
+    // ADD
     doneDays.push(dayName);
   }
 
