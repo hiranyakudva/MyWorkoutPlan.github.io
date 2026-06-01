@@ -42,7 +42,14 @@ for (let day in plan) {
   btn.innerText = day;
   btn.onclick = () => showDay(day);
   buttonContainer.appendChild(btn);
+
+  // Auto-scroll to top on day change
+  window.scrollTo(0, 0);
+
+  //Remember last selected day
+  localStorage.setItem("selectedDay", dayName);
+  
 }
 
-// show first day by default
-showDay(Object.keys(plan)[0]);
+const savedDay = localStorage.getItem("selectedDay");
+showDay(savedDay || Object.keys(plan)[0]);
