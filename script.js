@@ -20,7 +20,7 @@ const cooldown = [
 const plan = {
   "Day 1 - Full Body": [
     { name: "Back Row", gif: "gifs/day1/backrow.gif" },
-    { name: "Dumbell Squat", gif: "gifs/day1/dumbbellsquat.gif" },
+    { name: "Dumbbell Squat", gif: "gifs/day1/dumbbellsquat.gif" },
     { name: "Goblet March", gif: "gifs/day1/gobletmarch.gif" },
     { name: "Overhead Tricep Extension", gif: "gifs/day1/overheadtriceps.gif" },
     { name: "Overhead Press and Crunch", gif: "gifs/day1/pressandcrunch.gif" },
@@ -31,11 +31,16 @@ const plan = {
     { name: "Back Row and Bicep Curl", gif: "gifs/day2/backrowandhammercurl.gif" },
     { name: "Flip Grip Bicep Curls", gif: "gifs/day2/flipgripbicepcurls.gif" },
     { name: "Hammer Curl and Shoulder Press", gif: "gifs/day2/hammercurlandpress.gif" },
-    { name: "Dumbell Chest Press", gif: "gifs/day2/chestpress.gif" },
+    { name: "Dumbbell Chest Press", gif: "gifs/day2/chestpress.gif" },
     { name: "Single Arm Tricep Kickback", gif: "gifs/day2/tricepkickback.gif" }
   ],
   "Day 3 - Leg day": [
-    { name: "Jump Rope", gif: "https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" }
+    { name: "Goblet Squat", gif: "gifs/day3/gobletsquats.gif" },
+    { name: "Side Step Goblet Squat", gif: "gifs/day3/sidestepgobletsquat.gif" },
+    { name: "Split Lunge", gif: "gifs/day3/splitlunge.gif" },
+    { name: "Reverse Lunge and Lateral Lunge", gif: "gifs/day3/reverseandlaterallunge.gif" },
+    { name: "Staggered Deadlift", gif: "gifs/day3/staggereddeadlift.gif" },
+    { name: "Dumbbell Glute Bridge", gif: "gifs/day2/dumbbellglutebridges.gif" }
   ]
 };
 
