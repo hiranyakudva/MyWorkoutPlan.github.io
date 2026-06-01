@@ -3,7 +3,7 @@ const warmup = [
   "Hip Circles – 10 each direction",
   "Leg Swings - 10 each",
   "Glute Bridges - 10",
-  "Sqauts – 10",
+  "Squats – 10",
   "Lunges - 10"
 
 ];
@@ -57,6 +57,9 @@ function showDay(dayName) {
   `;
 
   // 🏋️ Main workout (with GIFs)
+  if (!plan[dayName]) {
+  dayName = Object.keys(plan)[0]; // fallback safely
+}
   plan[dayName].forEach(ex => {
     workoutContainer.innerHTML += `
       <div class="exercise">
@@ -166,8 +169,12 @@ function updateProgress() {
 
 /* LOAD */
 const savedDay = localStorage.getItem("selectedDay");
-showDay(savedDay || Object.keys(plan)[0]);
 
+if (savedDay && plan[savedDay]) {
+  showDay(savedDay);
+} else {
+  showDay(Object.keys(plan)[0]);
+}
 updateDoneButtons();
 updateProgress();
 
