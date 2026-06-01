@@ -42,6 +42,13 @@ const plan = {
     { name: "Staggered Deadlift", gif: "gifs/day3/staggereddeadlift.gif" },
     { name: "Dumbbell Glute Bridge", gif: "gifs/day3/dumbbellglutebridges.gif" }
   ]
+   "Day 4 - Express Arms": [
+    { name: "Lateral Shoulder Raises", gif: "gifs/day4/lateralraise.gif" },
+    { name: "Bicep Curls", gif: "gifs/day4/bicepcurls.gif" },
+    { name: "Overhead Triceps Extension", gif: "gifs/day4/tricepextensions.gif" },
+    { name: "Kneeling Single Arm Row", gif: "gifs/day4/kneelingbackrow.gif" },
+    { name: "Chest Press", gif: "gifs/day4/chestpress.gif" }
+  ]
 };
 
 const buttonContainer = document.getElementById("dayButtons");
