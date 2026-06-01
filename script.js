@@ -49,7 +49,10 @@ function showDay(dayName) {
 for (let day in plan) {
   const btn = document.createElement("button");
   btn.innerText = day;
-  btn.onclick = () => showDay(day);
+  btn.onclick = () => {
+  showDay(day);
+  localStorage.setItem("selectedDay", day);
+};
   buttonContainer.appendChild(btn);
 
   // Auto-scroll to top on day change
