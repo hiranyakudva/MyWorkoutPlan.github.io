@@ -48,6 +48,13 @@ const plan = {
     { name: "Overhead Triceps Extension", gif: "gifs/day4/tricepextensions.gif" },
     { name: "Kneeling Single Arm Row", gif: "gifs/day4/kneelingbackrow.gif" },
     { name: "Chest Press", gif: "gifs/day4/chestpress.gif" }
+  ],
+  "Day 5 - Glutes": [
+    { name: "Squat", gif: "gifs/day5/squats.gif" },
+    { name: "Deadlift", gif: "gifs/day5/deadlift.gif" },
+    { name: "Bulgarian Split Lunge", gif: "gifs/day5/bulgariansplitlunge.gif" },
+    { name: "Curtsy Lunge", gif: "gifs/day5/curtsylunge.gif" },
+    { name: "Dumbbell Hip Thrust", gif: "gifs/day5/hipthrust.gif" }
   ]
 };
 
