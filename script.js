@@ -27,8 +27,12 @@ const plan = {
     { name: "Squat and Bicep Curl", gif: "gifs/day1/squatandcurl.gif" }
   ],
   "Day 2 - Arms": [
-    { name: "Push-ups", gif: "https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif" },
-    { name: "Band Row", gif: "https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" }
+    { name: "Single Arm Reverse Grip Row", gif: "gifs/day2/singlearmbackrow.gif" },
+    { name: "Back Row and Bicep Curl", gif: "gifs/day2/backrowandhammercurl.gif" },
+    { name: "Flip Grip Bicep Curls", gif: "gifs/day2/flipgripbicepcurls.gif" },
+    { name: "Hammer Curl and Shoulder Press", gif: "gifs/day2/hammercurlandpress.gif" },
+    { name: "Dumbell Chest Press", gif: "gifs/day2/chestpress.gif" },
+    { name: "Single Arm Tricep Kickback", gif: "gifs/day2/tricepkickback.gif" }
   ],
   "Day 3 - Leg day": [
     { name: "Jump Rope", gif: "https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" }
