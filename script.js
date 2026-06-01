@@ -9,7 +9,7 @@ const warmup = [
 ];
 
 const cooldown = [
-  "Shoulder Stretch - 30 sec"
+  "Shoulder Stretch - 30 sec",
   "Quad Stretch - 30 sec",
   "Hamstring Stretch - 30 sec",
   "Knee to chest - 30 sec",
