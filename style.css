@@ -98,3 +98,29 @@ img {
   font-size: 16px;
   font-weight: bold;
 }
+#progressContainer {
+  background: white;
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+#progressText {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+#progressBar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
