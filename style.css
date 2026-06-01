@@ -7,6 +7,7 @@ body {
 h1 {
   text-align: center;
 }
+
 h2 {
   position: sticky;
   top: 0;
@@ -27,5 +28,32 @@ h2 {
 
 img {
   width: 100%;
+  border-radius: 10px;
+}
+
+#dayButtons {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ddd;
+  min-width: 90px;
+}
+
+button.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.exercise {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
