@@ -118,3 +118,15 @@ img.lazy {
   background: #ddd;
   min-height: 200px;
 }
+
+#resetBtn {
+  width: calc(100% - 28px);
+  margin: 10px 14px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #ff5252;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
