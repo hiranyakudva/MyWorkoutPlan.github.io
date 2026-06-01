@@ -12,16 +12,14 @@ const plan = {
   ]
 };
 
-const container = document.getElementById("days");
+const buttonContainer = document.getElementById("dayButtons");
+const workoutContainer = document.getElementById("workout");
 
-for (let day in plan) {
-  const dayDiv = document.createElement("div");
-  dayDiv.className = "day";
+function showDay(dayName) {
+  workoutContainer.innerHTML = `<h2>${dayName}</h2>`;
 
-  dayDiv.innerHTML = `<h2>${day}</h2>`;
-
-  plan[day].forEach(ex => {
-    dayDiv.innerHTML += `
+  plan[dayName].forEach(ex => {
+    workoutContainer.innerHTML += `
       <div class="exercise">
         <p>${ex.name}</p>
         <img src="${ex.gif}">
@@ -29,5 +27,22 @@ for (let day in plan) {
     `;
   });
 
-  container.appendChild(dayDiv);
+  // highlight active button
+  document.querySelectorAll("button").forEach(btn => {
+    btn.classList.remove("active");
+    if (btn.innerText === dayName) {
+      btn.classList.add("active");
+    }
+  });
 }
+
+// create buttons
+for (let day in plan) {
+  const btn = document.createElement("button");
+  btn.innerText = day;
+  btn.onclick = () => showDay(day);
+  buttonContainer.appendChild(btn);
+}
+
+// show first day by default
+showDay(Object.keys(plan)[0]);
