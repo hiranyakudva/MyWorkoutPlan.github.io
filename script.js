@@ -62,3 +62,25 @@ for (let day in plan) {
 
 const savedDay = localStorage.getItem("selectedDay");
 showDay(savedDay || Object.keys(plan)[0]);
+
+function markDone(dayName) {
+  let doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
+
+  if (!doneDays.includes(dayName)) {
+    doneDays.push(dayName);
+  }
+
+  localStorage.setItem("doneDays", JSON.stringify(doneDays));
+
+  updateDoneButtons();
+}
+
+function updateDoneButtons() {
+  let doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
+
+  document.querySelectorAll("#dayButtons button").forEach(btn => {
+    if (doneDays.includes(btn.innerText)) {
+      btn.classList.add("done");
+    }
+  });
+}
