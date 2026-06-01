@@ -15,6 +15,7 @@ const plan = {
 const buttonContainer = document.getElementById("dayButtons");
 const workoutContainer = document.getElementById("workout");
 
+/* SHOW DAY */
 function showDay(dayName) {
   workoutContainer.innerHTML = `<h2>${dayName}</h2>`;
 
@@ -27,46 +28,41 @@ function showDay(dayName) {
     `;
   });
 
-  // Add DONE button
   workoutContainer.innerHTML += `
     <button class="done-btn" id="doneBtn" onclick="markDone('${dayName}')">
-  ✅ Mark Day as Done
-</button>
+      ✅ Mark Day as Done
+    </button>
   `;
 
-  // highlight active
-  document.querySelectorAll("button").forEach(btn => {
+  // active button
+  document.querySelectorAll("#dayButtons button").forEach(btn => {
     btn.classList.remove("active");
     if (btn.innerText === dayName) {
       btn.classList.add("active");
     }
   });
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  // change button text if already done
   const doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
-if (doneDays.includes(dayName)) {
-  document.getElementById("doneBtn").innerText = "✔️ Completed";
-}
+  if (doneDays.includes(dayName)) {
+    document.getElementById("doneBtn").innerText = "✔️ Completed";
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-// create buttons
+/* CREATE BUTTONS */
 for (let day in plan) {
   const btn = document.createElement("button");
   btn.innerText = day;
   btn.onclick = () => {
-  showDay(day);
-  localStorage.setItem("selectedDay", day);
-};
+    showDay(day);
+    localStorage.setItem("selectedDay", day);
+  };
   buttonContainer.appendChild(btn);
-
-  // Auto-scroll to top on day change
-  window.scrollTo(0, 0);
-
-  //Remember last selected day
-  localStorage.setItem("selectedDay", dayName);
-  
 }
 
+/* MARK DONE */
 function markDone(dayName) {
   let doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
 
@@ -78,8 +74,10 @@ function markDone(dayName) {
 
   updateDoneButtons();
   updateProgress();
+  showDay(dayName);
 }
 
+/* UPDATE BUTTON COLORS */
 function updateDoneButtons() {
   let doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
 
@@ -89,24 +87,24 @@ function updateDoneButtons() {
     }
   });
 }
+
+/* PROGRESS BAR */
 function updateProgress() {
   const totalDays = Object.keys(plan).length;
   const doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
 
   const doneCount = doneDays.length;
 
-  // Update text
   document.getElementById("progressText").innerText =
     `Day ${doneCount}/${totalDays} done`;
 
-  // Update bar
   const percent = (doneCount / totalDays) * 100;
   document.getElementById("progressFill").style.width = percent + "%";
 }
-const savedDay = localStorage.getItem("selectedDay");
+
+/* LOAD */
 const savedDay = localStorage.getItem("selectedDay");
 showDay(savedDay || Object.keys(plan)[0]);
 
 updateDoneButtons();
 updateProgress();
-
