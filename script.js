@@ -1,3 +1,15 @@
+const warmup = [
+  "Jumping Jacks – 30 sec",
+  "Arm Circles – 30 sec",
+  "Hip Rotations – 30 sec"
+];
+
+const cooldown = [
+  "Hamstring Stretch – 30 sec",
+  "Child’s Pose – 30 sec",
+  "Deep Breathing – 1 min"
+];
+
 const plan = {
   "Day 1 - Full Body": [
     { name: "Back Row", gif: "gifs/day1/backrow.gif" },
@@ -19,6 +31,17 @@ const workoutContainer = document.getElementById("workout");
 function showDay(dayName) {
   workoutContainer.innerHTML = `<h2>${dayName}</h2>`;
 
+  // 🔥 Warm-up
+  workoutContainer.innerHTML += `
+    <div class="section">
+      <h3>🔥 Warm-up</h3>
+      <ul>
+        ${warmup.map(item => `<li>${item}</li>`).join("")}
+      </ul>
+    </div>
+  `;
+
+  // 🏋️ Main workout (with GIFs)
   plan[dayName].forEach(ex => {
     workoutContainer.innerHTML += `
       <div class="exercise">
@@ -28,6 +51,17 @@ function showDay(dayName) {
     `;
   });
 
+  // ❄️ Cool-down
+  workoutContainer.innerHTML += `
+    <div class="section">
+      <h3>❄️ Cool-down</h3>
+      <ul>
+        ${cooldown.map(item => `<li>${item}</li>`).join("")}
+      </ul>
+    </div>
+  `;
+
+  // ✅ Done button
   workoutContainer.innerHTML += `
     <button class="done-btn" id="doneBtn" onclick="markDone('${dayName}')">
       ✅ Mark Day as Done
@@ -42,18 +76,18 @@ function showDay(dayName) {
     }
   });
 
-  // change button text if already done
+  // toggle button text
   const doneDays = JSON.parse(localStorage.getItem("doneDays")) || [];
-const doneBtn = document.getElementById("doneBtn");
+  const doneBtn = document.getElementById("doneBtn");
 
-if (doneDays.includes(dayName)) {
-  doneBtn.innerText = "❌ Undo Completed";
-} else {
-  doneBtn.innerText = "✅ Mark Day as Done";
-}
+  if (doneDays.includes(dayName)) {
+    doneBtn.innerText = "❌ Undo Completed";
+  } else {
+    doneBtn.innerText = "✅ Mark Day as Done";
+  }
 
-  window.scrollTo({ top: 0, behavior: "smooth" });
   initLazyLoad();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 /* CREATE BUTTONS */
