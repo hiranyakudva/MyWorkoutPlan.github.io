@@ -79,7 +79,11 @@ const plan = {
     { name: "Tricep Kickback", gif: "gifs/day8/tricepkickbacks.gif" },
     { name: "Hammer Curl and Neutral Shoulder Press", gif: "gifs/day8/hammercurlpress.gif" },
     { name: "Overhead Triceps", gif: "gifs/day8/overheadtriceps.gif" }
-  ]
+  ],
+  "Day 9 - Inner Thighs": [
+    ],
+  "Day 10 - Abs": [
+    ],
 };
 
 const buttonContainer = document.getElementById("dayButtons");
