@@ -89,13 +89,16 @@ const plan = {
     { name: "Wall Sit", gif: "gifs/day9/wallsit.gif" }
     ],
   "Day 10 - Abs": [
-    { name: "Plank", gif: "gifs/day8/bicepcurl.gif" },
-    { name: "Overhead Press", gif: "gifs/day8/overheadpress.gif" },
-    { name: "Lateral Raise and Front Raise", gif: "gifs/day8/latraisefrontraise.gif" },
-    { name: "Tricep Kickback", gif: "gifs/day8/tricepkickbacks.gif" },
-    { name: "Hammer Curl and Neutral Shoulder Press", gif: "gifs/day8/hammercurlpress.gif" },
-    { name: "Overhead Triceps", gif: "gifs/day8/overheadtriceps.gif" }
-    ],
+    { name: "Plank", gif: "gifs/day10/plank.gif" },
+    { name: "Dead Bug", gif: "gifs/day10/deadbug.gif" },
+    { name: "Half Crunch", gif: "gifs/day10/halfcrunch.gif" },
+    { name: "Glute Bridge", gif: "gifs/day10/glutebridge.gif" },
+    { name: "Glute Bridge March", gif: "gifs/day10/glutebridgemarch.gif" },
+    { name: "Alternating Leg Lowers", gif: "gifs/day10/alternatingleglowers.gif" },
+    { name: "Bicycle Crunch", gif: "gifs/day10/bicyclecrunch.gif" },
+    { name: "Seated Twist", gif: "gifs/day10/seatedtwist.gif" },
+    { name: "Side Plank", gif: "gifs/day10/sideplank.gif" },
+    ]
 };
 
 const buttonContainer = document.getElementById("dayButtons");
