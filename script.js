@@ -81,8 +81,20 @@ const plan = {
     { name: "Overhead Triceps", gif: "gifs/day8/overheadtriceps.gif" }
   ],
   "Day 9 - Inner Thighs": [
+    { name: "Sumo Squat", gif: "gifs/day9/sumosquat.gif" },
+    { name: "Lateral Squat", gif: "gifs/day9/lateralsquat.gif" },
+    { name: "Curtsy Lunge", gif: "gifs/day9/curtsylunge.gif" },
+    { name: "Sumo Deadlift", gif: "gifs/day9/sumodeadlift.gif" },
+    { name: "Lateral Lunge Slide", gif: "gifs/day9/laterallungeslide.gif" },
+    { name: "Wall Sit", gif: "gifs/day9/wallsit.gif" }
     ],
   "Day 10 - Abs": [
+    { name: "Plank", gif: "gifs/day8/bicepcurl.gif" },
+    { name: "Overhead Press", gif: "gifs/day8/overheadpress.gif" },
+    { name: "Lateral Raise and Front Raise", gif: "gifs/day8/latraisefrontraise.gif" },
+    { name: "Tricep Kickback", gif: "gifs/day8/tricepkickbacks.gif" },
+    { name: "Hammer Curl and Neutral Shoulder Press", gif: "gifs/day8/hammercurlpress.gif" },
+    { name: "Overhead Triceps", gif: "gifs/day8/overheadtriceps.gif" }
     ],
 };
 
