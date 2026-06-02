@@ -63,6 +63,14 @@ const plan = {
     { name: "Push-Up and Renegade Row", gif: "gifs/day6/pushuprow.gif" },
     { name: "Seated Twist", gif: "gifs/day6/seatedtwist.gif" },
     { name: "Dead Bug", gif: "gifs/day6/deadbug.gif" }
+  ],
+  "Day 7 - Full Body Strength": [
+    { name: "Side Step Squat", gif: "gifs/day7/sidestepsquat.gif" },
+    { name: "Bicep Curl and Shoulder Press", gif: "gifs/day7/curlpress.gif" },
+    { name: "Reverse Lunge", gif: "gifs/day7/reverselunges.gif" },
+    { name: "Back Row", gif: "gifs/day7/backrows.gif" },
+    { name: "Lateral Lunge", gif: "gifs/day7/laterallunge.gif" },
+    { name: "Chest Press with Glute Bridge", gif: "gifs/day7/chestpress.gif" }
   ]
 };
 
