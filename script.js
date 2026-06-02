@@ -71,6 +71,14 @@ const plan = {
     { name: "Back Row", gif: "gifs/day7/backrows.gif" },
     { name: "Lateral Lunge", gif: "gifs/day7/laterallunge.gif" },
     { name: "Chest Press with Glute Bridge", gif: "gifs/day7/chestpress.gif" }
+  ],
+  "Day 8 - Standing Arms": [
+    { name: "Bicep Curl", gif: "gifs/day8/bicepcurl.gif" },
+    { name: "Overhead Press", gif: "gifs/day8/overheadpress.gif" },
+    { name: "Lateral Raise and Front Raise", gif: "gifs/day8/rlatraisefrontraise.gif" },
+    { name: "Tricep Kickback", gif: "gifs/day8/tricepkickbacks.gif" },
+    { name: "Hammer Curl and Neutral Shoulder Press", gif: "gifs/day8/hammercurlpress.gif" },
+    { name: "Overhead Triceps", gif: "gifs/day8/overheadtriceps.gif" }
   ]
 };
 
