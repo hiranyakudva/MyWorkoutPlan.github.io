@@ -49,21 +49,24 @@ const plan = {
     { name: "Kneeling Single Arm Row", gif: "gifs/day4/kneelingbackrow.gif" },
     { name: "Chest Press", gif: "gifs/day4/chestpress.gif" }
   ],
-  "Day 5 - Glutes": [
-    { name: "Squat", gif: "gifs/day5/squats.gif" },
-    { name: "Deadlift", gif: "gifs/day5/deadlift.gif" },
-    { name: "Bulgarian Split Lunge", gif: "gifs/day5/bulgariansplitlunge.gif" },
-    { name: "Curtsy Lunge", gif: "gifs/day5/curtsylunge.gif" },
-    { name: "Dumbbell Hip Thrust", gif: "gifs/day5/hipthrust.gif" }
+ 
+  "Day 5 - Full Body and Abs": [
+    { name: "Bicep Curl and Overhead Press", gif: "gifs/day5/curlandpress.gif" },
+    { name: "Plank and Arm Extension", gif: "gifs/day5/plankarmextensions.gif" },
+    { name: "Wide Squats", gif: "gifs/day5/widesquats.gif" },
+    { name: "Push-Up and Renegade Row", gif: "gifs/day5/pushuprow.gif" },
+    { name: "Seated Twist", gif: "gifs/day5/seatedtwist.gif" },
+    { name: "Dead Bug", gif: "gifs/day5/deadbug.gif" }
   ],
-  "Day 6 - Full Body and Abs": [
-    { name: "Bicep Curl and Overhead Press", gif: "gifs/day6/curlandpress.gif" },
-    { name: "Plank and Arm Extension", gif: "gifs/day6/plankarmextensions.gif" },
-    { name: "Wide Squats", gif: "gifs/day6/widesquats.gif" },
-    { name: "Push-Up and Renegade Row", gif: "gifs/day6/pushuprow.gif" },
-    { name: "Seated Twist", gif: "gifs/day6/seatedtwist.gif" },
-    { name: "Dead Bug", gif: "gifs/day6/deadbug.gif" }
+ 
+  "Day 6 - Glutes": [
+    { name: "Squat", gif: "gifs/day6/squats.gif" },
+    { name: "Deadlift", gif: "gifs/day6/deadlift.gif" },
+    { name: "Bulgarian Split Lunge", gif: "gifs/day6/bulgariansplitlunge.gif" },
+    { name: "Curtsy Lunge", gif: "gifs/day6/curtsylunge.gif" },
+    { name: "Dumbbell Hip Thrust", gif: "gifs/day6/hipthrust.gif" }
   ],
+  
   "Day 7 - Full Body Strength": [
     { name: "Side Step Squat", gif: "gifs/day7/sidestepsquat.gif" },
     { name: "Bicep Curl and Shoulder Press", gif: "gifs/day7/curlpress.gif" },
